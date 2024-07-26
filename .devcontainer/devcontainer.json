@@ -10,6 +10,10 @@
       "ghcr.io/devcontainers-contrib/features/act:1": {}
     },
 
+    "mounts": [
+      "source=${localWorkspaceFolder}/.gitconfig.devcontainer,target=/root/.gitconfig,type=bind,consistency=cached",
+    ],
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [3000],
 
