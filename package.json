@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "serve out"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.0.23",
+    "@types/react-dom": "^18.0.7",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.5",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve": "^14.2.0",
+    "typescript": "^4.9.5",
+    "wrangler": "^3.67.1"
+  }
+}
