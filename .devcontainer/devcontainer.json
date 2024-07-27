@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js & TypeScript",
+	"name": "Node.js & TypeScript (Windows) ",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:dev-22-bookworm",
 
@@ -11,11 +11,11 @@
     },
 
     "mounts": [
-      "source=${localWorkspaceFolder}/.gitconfig.devcontainer,target=/root/.gitconfig,type=bind,consistency=cached",
+      "source=${localWorkspaceFolder}/.gitconfig.devcontainer,target=/root/.gitconfig,type=bind,consistency=cached"
     ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [3000],
+	"forwardPorts": [3000,3001],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
