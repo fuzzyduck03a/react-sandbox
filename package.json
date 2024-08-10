@@ -5,6 +5,8 @@
     "dev_ss": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build && next export",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.json",
     "start": "serve out",
     "start2": "next start"
   },
@@ -14,11 +16,19 @@
     "@types/react-dom": "^18.0.7",
     "eslint": "^8",
     "eslint-config-next": "^14.2.5",
+    "eslint-plugin-react": "^7.35.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "serve": "^14.2.0",
     "typescript": "^4.9.5",
     "wrangler": "^3.67.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.3.3"
   }
 }
