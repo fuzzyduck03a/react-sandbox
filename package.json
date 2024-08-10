@@ -1,9 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "serve out"
+    "dev": "next dev",
+    "dev_ss": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build && next export",
+    "lint": "next lint",
+    "start": "serve out",
+    "start2": "next start"
   },
   "dependencies": {
     "@types/node": "^18.11.5",
