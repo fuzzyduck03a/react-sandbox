@@ -11,6 +11,9 @@ const Home = () => {
       <p>
         Visit the <Link href={'/about' as Route}>About</Link> page.
       </p>
+      <p>
+        Visit the <Link href={'/testform' as Route}>Testform</Link> page.
+      </p>
     </div>
   );
 };
